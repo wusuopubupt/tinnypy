@@ -1,4 +1,1 @@
-LearningPython
-==============
-
-My note of python.
+Some useful py scripts

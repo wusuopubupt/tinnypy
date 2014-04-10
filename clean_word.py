@@ -6,6 +6,7 @@ import sys
 all_words_file="all_words_file.txt"
 black_words_file="black_words_file.txt"
 
+
 def clean_word(all_words, black_words):
     for word in all_words:
         in_black = False

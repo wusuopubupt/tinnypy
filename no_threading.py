@@ -5,6 +5,7 @@ from Queue import Queue
 import time
 import urllib2
 
+
 task_num = 10000
 url="http://www.baidu.com?id="
 thread_num = 10

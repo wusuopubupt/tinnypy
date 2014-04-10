@@ -7,6 +7,7 @@ import time
 task_num = 10000
 thread_num = 10
 url = "http://www.baidu.com?id="
+
 # Queue是线程安全的
 queue = Queue.Queue()
 

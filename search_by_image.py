@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""
-My blog: http://blog.csdn.net/wusuopubupt/article/details/30501543
-"""
 
 import math
 import glob
@@ -66,5 +63,5 @@ for ext in EXTS:
         
 for f, dist in sorted(dists, key=lambda i: i[1]):
     print "%f\t%s" % (dist, f)        
-              
-        
+        
+

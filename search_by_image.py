@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+"""
+My blog: http://blog.csdn.net/wusuopubupt/article/details/30501543
+"""
 
 import math
 import glob

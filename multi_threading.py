@@ -10,13 +10,17 @@ url = "http://www.baidu.com?id="
 # Queue是线程安全的
 queue = Queue.Queue()
 
+# 继承自threading.Thread类
 class WorkerThread(threading.Thread):
+    # 属性定义
+    level = 0
     """
     Worker Threads
     """
-    def __init__(self, queue):
+    def __init__(self, queue, level):
         threading.Thread.__init__(self)
         self.queue = queue
+        self.level = level
   
     def run(self):
         while True:
@@ -30,7 +34,7 @@ class WorkerThread(threading.Thread):
 def main():
     #spawn a pool of threads, and pass them queue instance 
     for i in range(thread_num):
-        t = WorkerThread(queue)
+        t = WorkerThread(queue, level=1)
         t.setDaemon(True)
         t.start()
     #populate queue with data   

@@ -2,6 +2,7 @@
 
 # run:
 # spark-submit --master yarn --num-executors 50 --executor-memory 5g --executor-cores 5 --driver-memory 3g ./spark_sample_data.py
+
 def main():
     from pyspark import SparkConf, SparkContext
     sc = SparkContext("", "sample_task")

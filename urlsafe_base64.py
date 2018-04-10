@@ -1,5 +1,6 @@
 #!/usr/bin/env python  
 #coding:utf-8
+
 # urlsafe_base64 加解密
 import sys
 import base64
